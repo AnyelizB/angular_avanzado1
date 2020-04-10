@@ -10,14 +10,14 @@ import { RegisterComponent } from './login/register.component';
 
 
 const appRoutes: Routes = [
-    {path: '',
-    component: PagesComponent, 
-    children: [
-        {path: 'dashboard', component: DashboardComponent},
-        {path: 'progress', component: ProgessComponent},
-        {path: 'graficas1', component: Graficas1Component},
-        {path: '', redirectTo:'/dashboard', pathMatch:'full'}// cualquier ruta vacia me va a direccionar al dashboard
-    ]},
+    // {path: '',
+    // component: PagesComponent, 
+    // children: [
+    //     {path: 'dashboard', component: DashboardComponent},
+    //     {path: 'progress', component: ProgessComponent},
+    //     {path: 'graficas1', component: Graficas1Component},
+    //     {path: '', redirectTo:'/dashboard', pathMatch:'full'}// cualquier ruta vacia me va a direccionar al dashboard
+    // ]},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: '**', component:NopagefoundComponent} // cualquier ruta que no este en estos componentes
