@@ -6,6 +6,7 @@ import { APP_ROUTES } from './app.routes';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,12 +20,14 @@ import { BreadcrumsComponent } from './shared/breadcrums/breadcrums.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
+// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
+    // IncrementadorComponent,
     // NopagefoundComponent
     // DashboardComponent,
     // ProgessComponent,
@@ -37,7 +40,8 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
